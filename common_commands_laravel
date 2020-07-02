@@ -1,0 +1,27 @@
+Laravel Commands using Git:
+===========================
+
+Laravel Installaion:
+composer global require laravel/installer
+-------------------------------------------
+Create Laravel Project:
+composer create-project --prefer-dist laravel/laravel project_name
+-------------------------------------------
+run laravel server:
+php artisan serve
+-------------------------------------------
+Creating Controllers:
+php artisan make:controller controller_name
+-------------------------------------------
+
+To craete authentication (login/register) form automatically:
+php artisan ui vue --auth
+----------------------------------------------------------------
+To install node package mamnagement:
+npm install && npm dev
+------------------------------------------------------------------
+migrate Database from laravel to mysql database: inside folder database/migratation
+php artisan migrate
+-----------------------------------------------------------------------------
+Changing in .env file must Run after each command :
+composer dump-autoload
